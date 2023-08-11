@@ -10,11 +10,13 @@ namespace en
         int soruno = 0, dogru = 0, yanlis = 0;
         private void button5_Click(object sender, EventArgs e)
         {
+
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = false;
+
 
             soruno++;
             label4.Text = soruno.ToString();
@@ -22,7 +24,7 @@ namespace en
             if (soruno == 1)
             {
 
-                richTextBox1.Text = "Cumhuriyet kaç yýlýnda ilan edilmiþtir?";
+                richTextBox1.Text = "Cumhuriyet kaÃ§ yÄ±lÄ±nda ilan edilmiÅŸtir?";
                 button1.Text = "1920";
                 button2.Text = "1921";
                 button3.Text = "1922";
@@ -31,22 +33,22 @@ namespace en
             }
             if (soruno == 2)
             {
-                richTextBox1.Text = "Hangi il Ege Bölgemizde bulunmaz?";
-                button1.Text = "Ýzmir";
-                button2.Text = "Balýkesir";
-                button3.Text = "Aydýn";
+                richTextBox1.Text = "Hangi il Ege BÃ¶lgemizde bulunmaz?";
+                button1.Text = "Ä°zmir";
+                button2.Text = "BalÄ±kesir";
+                button3.Text = "AydÄ±n";
                 button4.Text = "Manisa";
-                label7.Text = "Balýkesir";
+                label7.Text = "BalÄ±kesir";
             }
             if (soruno == 3)
             {
-                richTextBox1.Text = "Son Kuþlar kitabý hangi yazarýmýza aittir?";
-                button1.Text = "Sait Faik Abasýyanýk";
-                button2.Text = "Cemal Süreya";
-                button3.Text = "Atilla Ýlhan";
-                button4.Text = "Reþat Nuri Gültekin";
-                label7.Text = "Sait Faik Abasýyanýk";
-                button5.Text = "Sonuçlar";
+                richTextBox1.Text = "Son KuÅŸlar kitabÄ± hangi yazarÄ±mÄ±za aittir?";
+                button1.Text = "Sait Faik AbasÄ±yanÄ±k";
+                button2.Text = "Cemal SÃ¼reya";
+                button3.Text = "Atilla Ä°lhan";
+                button4.Text = "ReÅŸat Nuri GÃ¼ltekin";
+                label7.Text = "Sait Faik AbasÄ±yanÄ±k";
+                button5.Text = "SonuÃ§lar";
             }
             if (soruno == 4)
             {
@@ -56,16 +58,18 @@ namespace en
                 button4.Enabled = false;
                 button5.Enabled = false;
 
-                MessageBox.Show("Doðru:" + dogru + " \n " + "Yanlýþ:" + yanlis);
+                MessageBox.Show("DoÄŸru:" + dogru + " \n " + "YanlÄ±ÅŸ:" + yanlis);
             }
-        }
-        private void button1_Click(object sender, EventArgs e)
+        }    
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = true;
+
 
             label8.Text = button1.Text;
             if (label7.Text == label8.Text)
@@ -80,13 +84,15 @@ namespace en
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
+
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
             button4.Enabled = false;
             button5.Enabled = true;
+
 
             label8.Text = button2.Text;
             if (label7.Text == label8.Text)
@@ -101,7 +107,7 @@ namespace en
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             button1.Enabled = false;
             button2.Enabled = false;
@@ -121,8 +127,10 @@ namespace en
                 label6.Text = yanlis.ToString();
             }
         }
-        private void button4_Click(object sender, EventArgs e)
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
+
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
